@@ -1,64 +1,30 @@
-<script setup lang="ts">
-import { useUserStore } from '~/stores/user'
+<script lang="ts" setup>
+import { pasteListener } from '~/scripts/paste'
 
-const user = useUserStore()
-const name = $ref(user.savedName)
-
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
-
-const { t } = useI18n()
+document.body.addEventListener('paste', pasteListener)
 </script>
 
 <template>
-  <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
-    </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
-
-    <div py-4 />
-
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
-      type="text"
-      autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
+  <div class="p-10">
+    <!-- Paste box -->
+    <div
+      class="border-3 border-gray-400 border-dashed rounded-lg p-5 min-h-70vh grid items-center"
+      hover="border-gray-600 dark:border-gray-200"
     >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+      <div class="flex flex-col items-center gap-4">
+        <h1 class="text-center text-4xl uppercase font-semibold">
+          Paste image to download
+        </h1>
 
-    <div>
-      <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
-      </button>
+        <icon class="block i-carbon-document-download text-5xl" />
+      </div>
     </div>
   </div>
-</template>
 
-<route lang="yaml">
-meta:
-  layout: home
-</route>
+  <div class="px-6">
+    <p class="text-center">
+      Use the <code class="text-transparent bg-clip-text bg-gradient-to-br from-rose-400 to-fuchsia-600">CTRL+V</code> key combination to paste an image from
+      your clipboard.
+    </p>
+  </div>
+</template>
