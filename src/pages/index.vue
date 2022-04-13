@@ -2,6 +2,8 @@
 import { pasteListener } from '~/scripts/paste'
 
 document.body.addEventListener('paste', pasteListener)
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -13,10 +15,10 @@ document.body.addEventListener('paste', pasteListener)
     >
       <div class="flex flex-col items-center gap-4">
         <h1 class="text-center text-4xl uppercase font-semibold">
-          Paste image to download
+          {{ t('index.title') }}
         </h1>
 
-        <icon class="block i-carbon-document-download text-5xl" />
+        <div class="block i-carbon-document-download text-5xl" />
       </div>
     </div>
   </div>
