@@ -28,7 +28,7 @@ const toggleLocales = () => {
         <div class="i-carbon-logo-github" />
       </a>
 
-      <a :title="t('button.toggle_langs')" class="icon-btn mx-2" @click="toggleDark()">
+      <a :title="t('button.toggle_langs')" class="icon-btn mx-2" @click="toggleLocales">
         <div class="i-carbon-language" />
       </a>
     </div>
