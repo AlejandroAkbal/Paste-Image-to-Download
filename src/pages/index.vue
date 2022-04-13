@@ -5,7 +5,7 @@ document.body.addEventListener('paste', pasteListener)
 </script>
 
 <template>
-  <div class="p-10">
+  <div class="p-6">
     <!-- Paste box -->
     <div
       class="border-3 border-gray-400 border-dashed rounded-lg p-5 min-h-70vh grid items-center"
