@@ -11,3 +11,7 @@ button:
   toggle_langs: Change languages
 
 not-found: Not found
+
+index:
+  title: Paste image to download
+  body: Use the {keyCombination} key combination to paste an image from your clipboard.
