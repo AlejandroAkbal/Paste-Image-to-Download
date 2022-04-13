@@ -1,21 +1,16 @@
 ---
-title: About
+title: "About"
 ---
 
-<div class="text-center">
-  <!-- You can use Vue components inside markdown -->
-  <div i-carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
-  <h3>About</h3>
+<div class="text-center mt-6">
+    <div class="i-carbon-dicom-overlay text-4xl -mb-6 m-auto"/>
+    <h3>About</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
+[Paste Image to Download](/) is a utility website made by [Alejandro Akbal](https://akbal.dev)
+for downloading images in your clipboard.
 
-```js
-// syntax highlighting example
-function vitesse() {
-  const foo = 'bar'
-  console.log(foo)
-}
-```
+The pasted images are processed and downloaded locally. \
+No data ever gets out of your device.
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+This is an open source project, check out the [source code](https://github.com/AlejandroAkbal/Paste-Image-to-Download).
