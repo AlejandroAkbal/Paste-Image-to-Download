@@ -11,9 +11,9 @@ title: "About"
 for downloading images in your clipboard.
 
 This tool was made for those moments where you take a screenshot and it is directly copied to the clipboard. \
-Instead of going to MS Paint and pasting the image, saving it and choosing a location... You can just paste it here.
+Instead of going to MS Paint, pasting the image, choosing a location and saving it... **You can just paste it in this website.**
 
-The pasted images are processed and downloaded locally. \
-No data ever gets out of your device.
+The pasted images are processed and downloaded locally in your device. \
+No data is ever sent.
 
-This is an open source project, check out the [source code](https://github.com/AlejandroAkbal/Paste-Image-to-Download).
+*This is an open source project, check out the [source code](https://github.com/AlejandroAkbal/Paste-Image-to-Download).*
