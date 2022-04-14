@@ -10,7 +10,7 @@ const { t } = useI18n()
   <div class="p-6">
     <!-- Download box -->
     <button
-      class="w-full h-100vh max-h-70vh border-3 border-gray-400 border-dashed rounded-lg p-5 flex flex-col outline-none
+      class="w-full h-100vh max-h-70vh border-3 border-gray-400 border-dashed rounded-lg outline-none p-5 flex flex-col justify-center items-center
       hover:(border-gray-600 dark:border-gray-200)
       focus-visible:(border-gray-600 dark:border-gray-200)"
       type="button"
