@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { pasteListener } from '~/scripts/paste'
+import { pasteClickListener, pasteKeyboardListener } from '~/scripts/paste'
 
-document.body.addEventListener('paste', pasteListener)
+document.body.addEventListener('paste', pasteKeyboardListener)
 
 const { t } = useI18n()
 </script>
@@ -12,6 +12,7 @@ const { t } = useI18n()
     <div
       class="border-3 border-gray-400 border-dashed rounded-lg p-5 min-h-70vh grid items-center"
       hover="border-gray-600 dark:border-gray-200"
+      @click="pasteClickListener"
     >
       <div class="flex flex-col items-center gap-4">
         <h1 class="text-center text-4xl uppercase font-semibold">
