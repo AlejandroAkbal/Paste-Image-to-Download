@@ -8,6 +8,9 @@ useHead({
   title: t('app.title'),
   meta: [
     { name: 'description', content: t('app.description') },
+
+    { name: 'og:type', content: 'website' },
+    { name: 'og:image', content: '/social.png' },
   ],
 })
 </script>
