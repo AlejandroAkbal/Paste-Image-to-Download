@@ -10,7 +10,10 @@ Paste Image to Download
 for downloading images in your clipboard.
 
 This tool was made for those moments where you take a screenshot and it is directly copied to the clipboard. \
-Instead of going to MS Paint and pasting the image, saving it and choosing a location... You can just paste it here.
+Instead of going to MS Paint, pasting the image, choosing a location and saving it... \
+**You can just paste it in this website.**
+
+![Preview](./public/social.png)
 
 ## Usage
 
