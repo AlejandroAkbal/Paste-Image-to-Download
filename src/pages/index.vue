@@ -8,10 +8,11 @@ const { t } = useI18n()
 
 <template>
   <div class="p-6">
-    <!-- Paste box -->
+    <!-- Download box -->
     <button
-      class="w-full h-100vh max-h-75vh border-3 border-gray-400 border-dashed rounded-lg p-5 grid items-center"
-      hover="border-gray-600 dark:border-gray-200"
+      class="w-full h-100vh max-h-70vh border-3 border-gray-400 border-dashed rounded-lg p-5 flex flex-col outline-none
+      hover:(border-gray-600 dark:border-gray-200)
+      focus-visible:(border-gray-600 dark:border-gray-200)"
       type="button"
       @click="pasteClickListener"
     >
@@ -33,8 +34,8 @@ const { t } = useI18n()
 
   <div class="px-6">
     <p class="text-center">
-      Use the <code class="text-transparent bg-clip-text bg-gradient-to-br from-rose-400 to-fuchsia-600">CTRL+V</code> key combination to paste an image from
-      your clipboard.
+      Use the <code class="text-transparent bg-clip-text bg-gradient-to-br from-rose-400 to-fuchsia-600">CTRL+V</code>
+      key combination to paste an image from your clipboard.
     </p>
   </div>
 </template>
