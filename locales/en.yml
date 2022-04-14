@@ -14,4 +14,5 @@ not-found: Not found
 
 index:
   title: Paste image to download
+  subtitle: You can also click me
   body: Use the {keyCombination} key combination to paste an image from your clipboard.

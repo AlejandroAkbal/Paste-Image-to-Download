@@ -15,13 +15,19 @@ const { t } = useI18n()
       type="button"
       @click="pasteClickListener"
     >
-      <div class="flex flex-col items-center gap-4">
-        <h1 class="text-center text-4xl uppercase font-semibold">
-          {{ t('index.title') }}
-        </h1>
+      <div class="flex-auto grid items-center">
+        <div class="flex flex-col items-center gap-4">
+          <h1 class="text-center text-4xl uppercase font-semibold">
+            {{ t('index.title') }}
+          </h1>
 
-        <div class="block i-carbon-document-download text-5xl" />
+          <div class="block i-carbon-document-download text-5xl" />
+        </div>
       </div>
+
+      <h2 class="text-center text-sm italic font-semibold">
+        {{ t('index.subtitle') }}
+      </h2>
     </button>
   </div>
 
