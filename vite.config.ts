@@ -86,8 +86,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Paste Image to Download',
+        short_name: 'Paste Image to Download',
         theme_color: '#ffffff',
         icons: [
           {
@@ -126,7 +126,9 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    onFinished() { generateSitemap() },
+    onFinished() {
+      generateSitemap()
+    },
   },
 
   // https://github.com/vitest-dev/vitest
