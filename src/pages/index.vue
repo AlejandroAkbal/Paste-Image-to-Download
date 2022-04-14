@@ -9,9 +9,10 @@ const { t } = useI18n()
 <template>
   <div class="p-6">
     <!-- Paste box -->
-    <div
-      class="border-3 border-gray-400 border-dashed rounded-lg p-5 min-h-70vh grid items-center"
+    <button
+      class="w-full h-100vh max-h-75vh border-3 border-gray-400 border-dashed rounded-lg p-5 grid items-center"
       hover="border-gray-600 dark:border-gray-200"
+      type="button"
       @click="pasteClickListener"
     >
       <div class="flex flex-col items-center gap-4">
@@ -21,7 +22,7 @@ const { t } = useI18n()
 
         <div class="block i-carbon-document-download text-5xl" />
       </div>
-    </div>
+    </button>
   </div>
 
   <div class="px-6">

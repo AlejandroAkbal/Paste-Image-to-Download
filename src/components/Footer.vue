@@ -20,17 +20,19 @@ const toggleLocales = () => {
     </RouterLink>
 
     <div class="mt-2">
-      <button :title="t('button.toggle_dark')" class="icon-btn mx-2 !outline-none" @click="toggleDark()">
+      <button :title="t('button.toggle_dark')" class="icon-btn mx-2" type="button" @click="toggleDark()">
         <div class="i-carbon-sun dark:i-carbon-moon" />
       </button>
 
-      <a class="icon-btn mx-2" href="https://github.com/AlejandroAkbal/Paste-Image-to-Download" rel="noreferrer" target="_blank" title="GitHub">
+      <a
+        class="icon-btn mx-2" href="https://github.com/AlejandroAkbal/Paste-Image-to-Download" rel="noreferrer" target="_blank" title="GitHub"
+      >
         <div class="i-carbon-logo-github" />
       </a>
 
-      <a :title="t('button.toggle_langs')" class="icon-btn mx-2" @click="toggleLocales">
+      <button :title="t('button.toggle_langs')" class="icon-btn mx-2" type="button" @click="toggleLocales">
         <div class="i-carbon-language" />
-      </a>
+      </button>
     </div>
   </nav>
 </template>
