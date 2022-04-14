@@ -6,13 +6,7 @@
 Paste Image to Download
 </h1>
 
-<h2 align='center'>
-<a href="https://paste-image-to-download.netlify.app/">Website</a>
-</h2>
-
-<br>
-
-Paste Image to Download is a utility website made by [Alejandro Akbal](https://akbal.dev)
+[Paste Image to Download](https://paste-image-to-download.netlify.app/) is a utility website made by [Alejandro Akbal](https://akbal.dev)
 for downloading images in your clipboard.
 
 This tool was made for those moments where you take a screenshot and it is directly copied to the clipboard. \
